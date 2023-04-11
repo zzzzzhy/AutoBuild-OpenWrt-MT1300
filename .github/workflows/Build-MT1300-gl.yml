@@ -75,18 +75,6 @@ jobs:
       env:
         DEBIAN_FRONTEND: noninteractive
       run: |
-        echo "Remove All docker images"
-        docker rmi `docker images -q`
-        echo "Deleting flies, please wait ..."
-        #sudo rm -rf /etc/apt/sources.list.d/* /usr/share/dotnet /usr/local/lib/android /opt/ghc
-        sudo rm -rf \
-          /usr/local/lib/android \
-          /usr/share/dotnet \
-          /etc/apt/sources.list.d/* \
-          /etc/mysql \
-          /etc/php \
-          /opt/ghc
-        echo "Uninstalling unnecessary packages, please wait..."
         sudo -E apt-get -y purge \
           azure-cli \
           ghc* \
