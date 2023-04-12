@@ -62,11 +62,11 @@ then
     [ -d /workdir/openwrt/package/lean/helloworld ] && cp -r /workdir/lede/feeds/packages/net/shadowsocks-libev /workdir/openwrt/package/lean/helloworld/
 fi
 
-echo "Remove GL-inet feeds/packages/net/wget"
-rm -rf /workdir/openwrt/feeds/packages/net/wget
-echo "Copy Lean feeds/packages/net/wget To GL-inet feeds/packages/net/wget & package/lean/wget"
-cp -rp /workdir/lede/feeds/packages/net/wget /workdir/openwrt/feeds/packages/net/wget
-cp -rp /workdir/lede/feeds/packages/net/wget /workdir/openwrt/package/lean/wget
+# echo "Remove GL-inet feeds/packages/net/wget"
+# rm -rf /workdir/openwrt/feeds/packages/net/wget
+# echo "Copy Lean feeds/packages/net/wget To GL-inet feeds/packages/net/wget & package/lean/wget"
+# cp -rp /workdir/lede/feeds/packages/net/wget /workdir/openwrt/feeds/packages/net/wget
+# cp -rp /workdir/lede/feeds/packages/net/wget /workdir/openwrt/package/lean/wget
 
 ############################
 # 以下为添加的自定义 Packages
